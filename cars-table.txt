@@ -1,4 +1,4 @@
-id                            -UNSIGNED BIGINT        -PRIMARY_KEY -UNIQUE -NOT NULL -AUTOINCREMENT
+id                            -UNSIGNED BIGINT        -PRIMARY_KEY -UNIQUE -NOT NULL -AUTO_INCREMENT
 brand                         -VARCHAR(255)           -NOT NULL -INDEX
 model                         -VARCHAR(255)           -NOT NULL
 version                       -VARCHAR(255)           -NULL

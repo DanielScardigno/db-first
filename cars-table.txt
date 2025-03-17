@@ -1,0 +1,25 @@
+id                            -UNSIGNED BIGINT        -PRIMARY_KEY -UNIQUE -NOT NULL -AUTOINCREMENT
+brand                         -VARCHAR(255)           -NOT NULL -INDEX
+model                         -VARCHAR(255)           -NOT NULL
+version                       -VARCHAR(255)           -NULL
+body-type                     -VARCHAR(255)           -NULL
+color                         -VARCHAR(255)           -NULL
+fuel                          -VARCHAR(255)           -NULL -INDEX
+emissions_class               -VARCHAR(255)           -NULL
+production_year               -YEAR                   -NULL
+mileage_km                    -DOUBLE(6, 3)           -NULL -INDEX
+power_kw                      -UNSIGNED SMALLINT      -NULL
+fuel_consumption_l/100km      -UNSIGNED TINYINT       -NULL
+gearbox                       -VARCHAR(255)           -NULL
+traction                      -VARCHAR(255)           -NULL
+doors_number                  -UNSIGNED TINYINT       -NULL 
+seats_number                  -UNSIGNED TINYINT       -NULL
+used                          -UNSIGNED TINYINT       -NOT NULL -DEFAULT(0) -INDEX
+conditions                    -TEXT                   -NULL
+abs                           -UNSIGNED TINYINT       -NOT NULL -DEFAULT(1) 
+ac                            -UNSIGNED TINYINT       -NOT NULL -DEFAULT(1)
+led-headlights                -UNSIGNED TINYINT       -NOT NULL -DEFAULT(0)
+navigator                     -UNSIGNED TINYINT       -NOT NULL -DEFAULT(0)
+adaptive_cruise_control       -UNSIGNED TINYINT       -NOT NULL -DEFAULT(0)
+chassis_number                -UNSIGNED TINYINT       -NOT NULL -DEFAULT(0) -UNIQUE
+visible                       -UNSIGNED TINYINT       -NOT NULL -DEFAULT(0)
